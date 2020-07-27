@@ -1,0 +1,167 @@
+.color-dark {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.color-primary {
+    background-color: rgb(217, 25, 24);
+}
+
+nav a, nav a:hover {
+    color: white;
+}
+
+nav li:hover{
+    background-color: rgba(217, 25, 24,.75);
+}
+
+.color-white {
+    color: white;
+}
+
+.my-toggler.navbar-toggler {
+    border-color: white;
+    color: white;
+    outline: none;
+    appearance: none;
+}
+
+.my-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar{
+    margin: 0;
+    padding: 0;
+}
+.navbar-brand, .my-toggler{
+    margin:.5em 1em;
+}
+.nav-item{
+    padding: 0 1em;
+}
+
+.short-info{
+    display: flex;
+    flex-direction: row;
+}
+.short-info__box{
+    margin: 0 auto;
+    width: 10em;
+    height: 10em;
+    background-color: rgb(217, 25, 24);
+    clip-path: circle(30%);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    position: relative;
+   
+}
+.short-info__box span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.graph{
+    width: 80vw;
+    height: 50vh;
+    background-color: rosybrown;
+    margin: 1em auto;
+}
+
+.header{
+    width: 50vw;
+    height: auto;
+}
+.img{
+    width: 50vw;
+    height: auto;
+}
+
+/* main-content /*/
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: min-content;
+    margin: 0 auto;
+}
+.header-box--saldo{
+    width: 11em;
+    height: 11em;
+    background-color: white;
+    border-radius: 100px;
+    position: relative;
+    transition: all .1s ease;
+}
+.header-saldo--back{
+    display: none;
+}
+.header-box--saldo::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10em;
+    height: 10em;
+    background-color: transparent;
+    border: 1px solid rgb(217, 25, 24);
+    border-radius: 100px;
+}
+
+.header-box--saldo:hover::after{
+    border: 1px solid white;
+}
+.header-box--saldo:hover{
+    background-color: rgb(217, 25, 24);
+}
+.header-box--saldo:hover a{
+    color: white;
+}
+.header-box--saldo a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    font-size: 2.5em;
+    text-decoration: none;
+    color: rgb(217, 25, 24);
+}
+.header-box--saldo a{
+
+}
+.header-box--saldo span{
+    font-size: .8em;
+    display: block;
+}
+svg{
+    fill: red;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: auto;
+    justify-items: center;
+    grid-row-gap: 1em;
+}
+.main-box{
+    width: 8em;
+    height: 8em;
+    background-color: white;
+    box-shadow: 0px 3px .5em rgba(0, 0, 0, 0.301);
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+.main-box a{
+    color: rgb(217, 25, 24);
+}
+
